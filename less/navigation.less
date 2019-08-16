@@ -1,12 +1,21 @@
 // Navigation Styles here
     .topNav {
         display: flex;
-        .navStyle();
-       
+        justify-content: @justify;
+        padding: 30px;
+        border-bottom: 2px dashed @silver;
+        border: 1px solid red;
+        
     a {
-        .alinks();
+        .alinks(); 
+        border: 1px solid red;       
     }
     h1 {
         padding-right: 250px;
     }
+    @media @mobile{
+        .topNav{
+            padding: 0;
+        }
+      }
 }

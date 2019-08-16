@@ -1,14 +1,18 @@
 // Mixins in here
-.navStyle{
-    display: flex;
-    justify-content: @justify;
-    padding: 30px;
-    border-bottom: 2px dashed @silver;
-}
-
 .alinks{
     text-decoration: none;
     padding: 20px;
     color: black;
     font-size: 2rem;
+    border: 1px solid red;
+}
+
+.btnStyle(@button-bg, @justify){
+    border-radius: 10px;
+    font-size: 2rem;
+    color: white;
+    background-color: @button-bg;
+    text-align: @justify;
+    padding: 10px;
+    width: 200px;
 }
